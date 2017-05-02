@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   get '/artists/',    to: 'artists#index'
   get '/artists/:id', to:'artists#show', as: 'artist'
-  get '/auth/spotify/callback', to: 'sessions#create' #'users#spotify'
+  get '/auth/spotify/callback', to: 'sessions#create'
+
+  delete 'sign_out', to: "sessions#destroy", as: 'sign_out'
 
   # I don't think this is right.
   # get '/users/', to: "users#index"
