@@ -1,0 +1,20 @@
+<div class="container" >
+  <h1><%= @artist.name %></h1>
+  <h2>Total minutes of music:
+    <%= @artist.albums(country: 'US').map { |album| album.tracks }.flatten.inject(0) { |sum, track| sum + track.duration_ms } / 1000 / 60  %>
+  </h2>
+  <% @artist.albums(country: 'US').each do |album| %>
+    <div class="album-details">
+      <%= image_tag(album.images.second['url']) %>
+      <h3 class="album-name"><%= album.name %></h3>
+    </div>
+    <p>Relase date: <%= album.release_date %></p>
+    <ul>
+      <% album.tracks.each do |track| %>
+        <li>
+          <%= track.name %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
