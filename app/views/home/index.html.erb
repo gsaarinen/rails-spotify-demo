@@ -1,5 +1,9 @@
+<div class="jumbotron">
+  <h1>Welcome To Authenticating With Spotify!</h1>
+  <p>A quick app built to authenticate with Spotify via Oauth and play around with it's API.</p>
+</div>
 <div class="container">
-  <h1 class="page-header">Spotify Test</h1>
+  <h1 class="page-header">Spotify Search</h1>
 
   <%= form_tag artists_path, method: "get", html: { class: "form" } do %>
     <div class="form-group col-xs-4">
@@ -7,8 +11,4 @@
     </div>
     <%= submit_tag "Search", class: "btn btn-primary" %>
   <% end %>
-
-  <%= link_to 'Sign in with Spotify', '/auth/spotify' %>
-
-  
 </div>
