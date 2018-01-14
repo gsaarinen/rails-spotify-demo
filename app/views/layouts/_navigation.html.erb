@@ -11,10 +11,18 @@
       <a class="navbar-brand" href="#">Garret's App</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse">
+      <% if current_user %>
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to 'Home', root_path %></li>
-          <li><%= link_to 'Sign in with Spotify', '/auth/spotify' %></li>
+          <li><%= image_tag current_user.image_url, alt: current_user.name, class: "profile-image"%></li>
+          <li><%= link_to 'Log Out', '/logout', method: :delete  %></li>
         </ul>
+        <% else %>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Sign in with Spotify', '/auth/spotify' %></li>
+          </ul>
+        <% end %>
     </div>
   </div>
 </nav>

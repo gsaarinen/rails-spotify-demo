@@ -1,0 +1,61 @@
+{
+  provider: "spotify",
+  uid: "1238786119",
+  info: {
+    country: "US",
+    display_name: "Garret Saarinen",
+    email: "gbsaarinen@me.com",
+    external_urls: {
+      spotify: "https://open.spotify.com/user/1238786119"
+    },
+    followers: {
+      href: null,
+      total: 23
+    },
+    href: "https://api.spotify.com/v1/users/1238786119",
+    id: "1238786119",
+    images: [
+      {
+        height: null,
+        url: "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/21231788_10101021010460290_6788903971737096436_n.jpg?oh=e5c5736241fd1ed635b89a6051ee077d&oe=5AED8B6E",
+        width: null
+      }
+    ],
+    product: "premium",
+    type: "user",
+    uri: "spotify:user:1238786119",
+    name: "gbsaarinen@me.com"
+  },
+  credentials: {
+    token: "BQDagxIPe0ON91MCy4FjKozn6uOcVpHO7xg-bcMN7h6ZE5pHu9w4d5k6CTxP-_t57Rpo8Dz22WjHKFWnM-Oj2Q0ucXo17Nr6ayrGKFXXb5YApqEuPzAR59ROTFCDtR9VijHH98G1czZ-ivKQ3LVJrmYaqPwRf4K2-w-Xo0Fl_j1aXP_SBmx_y25yR0t8qTTUB6xa50I4_w",
+    refresh_token: "AQDQ4eWhWwWJqNaN8pL8xBRR13v2a_lj8uineYDVqp5SsWtC3Ie3_NawjRWYH1GboLxzh3cLY0zdwG-90RiOJL_VKPPDvmvyIrrNGMXNz2iqGx4DIsJXZ6Ablp--wMdh3Y0",
+    expires_at: 1515883987,
+    expires: true
+  },
+  extra: {
+    raw_info: {
+      country: "US",
+      display_name: "Garret Saarinen",
+      email: "gbsaarinen@me.com",
+      external_urls: {
+        spotify: "https://open.spotify.com/user/1238786119"
+      },
+      followers: {
+        href: null,
+        total: 23
+      },
+      href: "https://api.spotify.com/v1/users/1238786119",
+      id: "1238786119",
+      images: [
+        {
+          height: null,
+          url: "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/21231788_10101021010460290_6788903971737096436_n.jpg?oh=e5c5736241fd1ed635b89a6051ee077d&oe=5AED8B6E",
+          width: null
+        }
+      ],
+      product: "premium",
+      type: "user",
+      uri: "spotify:user:1238786119"
+    }
+  }
+}

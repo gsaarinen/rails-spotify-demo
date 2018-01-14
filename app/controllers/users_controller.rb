@@ -9,8 +9,12 @@ class UsersController < ApplicationController
     # redirect_to @user
   end
 
+  def index
+    @users = User.all
+  end
+
   def show
-    @user = User.find_by(params[:uid])
+    @user = User.find(params[:id])
   end
 
   def new
